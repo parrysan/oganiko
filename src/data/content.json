@@ -1,0 +1,135 @@
+{
+    "global": {
+        "siteName": "Steve Apps",
+        "contactEmail": "hello@steveapps.com",
+        "socials": [
+            {
+                "platform": "LinkedIn",
+                "url": "https://linkedin.com/in/steveapps"
+            }
+        ],
+        "navigation": [
+            {
+                "label": "Services",
+                "path": "/services"
+            },
+            {
+                "label": "Results",
+                "path": "/results"
+            },
+            {
+                "label": "About",
+                "path": "/about"
+            }
+        ],
+        "cta": {
+            "primary": "Get In Touch",
+            "bookingLink": "/contact"
+        }
+    },
+    "home": {
+        "hero": {
+            "eyebrow": "LEADERSHIP COMMUNICATION COACH",
+            "headline": "Communicate with Presence, Purpose & Impact",
+            "subtext": "Transform how you lead in the moments that matter most. With 25+ years of experience, I help senior leaders worldwide communicate with clarity, confidence, and genuine impact—especially when stakes are highest.",
+            "imageAlt": "Steve Apps - Leadership Coach"
+        },
+        "journey": {
+            "title": "Your Communication Journey",
+            "steps": [
+                {
+                    "step": "1",
+                    "title": "Awareness",
+                    "desc": "Understand your current patterns and impact"
+                },
+                {
+                    "step": "2",
+                    "title": "Clarity",
+                    "desc": "Structure your message with precision"
+                },
+                {
+                    "step": "3",
+                    "title": "Confidence",
+                    "desc": "Master your physical and vocal presence"
+                },
+                {
+                    "step": "4",
+                    "title": "Impact",
+                    "desc": "Lead with presence in critical moments"
+                }
+            ]
+        },
+        "coaching": {
+            "title": "Expert Coaching In Four Areas",
+            "items": [
+                {
+                    "title": "Town Hall & Conference Speaker Coaching",
+                    "desc": "Command large audiences with authentic storytelling, vocal presence, and calm nervous systems."
+                },
+                {
+                    "title": "Involving & Influencing Others",
+                    "desc": "Master the intricate dynamics of influencing peers, board members, and stakeholders."
+                },
+                {
+                    "title": "Communicating Change",
+                    "desc": "Navigate critical organizational shifts with clear messaging that builds trust."
+                },
+                {
+                    "title": "Roleplaying for Leaders",
+                    "desc": "Gain confidence by practicing high-stakes scenarios in a safe environment."
+                }
+            ]
+        },
+        "experience": {
+            "title": "What You'll Experience",
+            "cards": [
+                {
+                    "title": "25+",
+                    "subtitle": "Years of executive coaching experience across global industries."
+                },
+                {
+                    "title": "Business Psychology",
+                    "subtitle": "Grounded in behavioral science and real-world leadership dynamics."
+                },
+                {
+                    "title": "Pragmatic & Calm",
+                    "subtitle": "Find your solutions through a calm, physics-based approach."
+                }
+            ]
+        },
+        "proof": {
+            "title": "Trusted by Global Leaders",
+            "logos": [
+                "HSBC",
+                "L'Oréal",
+                "IBM",
+                "Microsoft",
+                "BP",
+                "Barclays",
+                "Danone",
+                "Vodafone",
+                "Mars",
+                "Johnson & Johnson"
+            ]
+        },
+        "finalCta": {
+            "title": "Ready to Lead with Impact?",
+            "desc": "Let's explore how coaching can transform your leadership communication in critical moments."
+        }
+    },
+    "about": {
+        "bio": "With over 25 years of experience...",
+        "milestones": []
+    },
+    "services": [
+        {
+            "title": "Leadership Coaching",
+            "target": "",
+            "desc": ""
+        }
+    ],
+    "contact": {
+        "title": "Let's Talk",
+        "desc": "Book a 30-minute intro."
+    }
+}

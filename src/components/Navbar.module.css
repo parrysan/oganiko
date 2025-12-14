@@ -1,0 +1,111 @@
+.nav {
+    height: var(--header-height);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    /* Inverted Black Background */
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    /* White Logo */
+    z-index: 1001;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.logo:hover {
+    color: #cccccc;
+    /* Slight grey on hover */
+}
+
+.desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.links {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.link {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    /* Muted White */
+    transition: color var(--transition-fast);
+}
+
+.link:hover,
+.active {
+    color: #ffffff;
+    /* Active White */
+}
+
+.mobileToggle {
+    display: none;
+    z-index: 1001;
+    color: #ffffff;
+    /* White Hamburger */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .mobileToggle {
+        display: block;
+    }
+
+    .mobileMenu {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        background-color: var(--color-bg);
+        padding: var(--space-xl) var(--space-md);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-xl);
+        overflow-y: auto;
+    }
+
+    .mobileLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-lg);
+        width: 100%;
+    }
+
+    .mobileLink {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-text);
+    }
+
+    .mobileCta {
+        width: 100%;
+        max-width: 300px;
+    }
+}

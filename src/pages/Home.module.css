@@ -1,0 +1,245 @@
+/* Hero */
+.hero {
+    background-color: var(--color-hero-bg);
+    color: #fff;
+    padding-top: var(--space-xl);
+    /* No bottom padding because image sits on bottom edge */
+    overflow: hidden;
+}
+
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+}
+
+.heroContent {
+    flex: 1;
+    padding-bottom: var(--space-xl);
+}
+
+.eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+    opacity: 0.8;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-md);
+}
+
+.subtext {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.heroImageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.heroImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    /* Slight rounding on top */
+    /* Remove mask in favor of clean cutout look for now */
+}
+
+
+/* Journey */
+.journeyGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    position: relative;
+}
+
+/* Connecting Line */
+.journeyGrid::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    /* Align with number center */
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: var(--color-border);
+    z-index: 0;
+}
+
+.journeyStep {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    /* Breaks line */
+    padding: 0 var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stepNumber {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-accent-light);
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: var(--space-md);
+}
+
+.stepTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.stepDesc {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+
+/* Coaching Grid (Teal Section) */
+.coachingSection {
+    background-color: var(--color-section-teal);
+    padding: var(--space-xxl) 0;
+}
+
+.coachingGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.coachingCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Glassy look */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: var(--space-lg);
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color var(--transition-fast);
+}
+
+.coachingCard:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.coachingTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.coachingDesc {
+    font-size: 0.9375rem;
+    opacity: 0.9;
+}
+
+
+/* Experience Cards */
+.experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.experienceCard {
+    background-color: #fff;
+    /* White cards on light bg */
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+.expTitle {
+    color: var(--color-section-teal);
+    /* Teal brand color */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.expSubtitle {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+}
+
+
+/* Final CTA */
+.finalCta {
+    background-color: var(--color-section-teal);
+    padding: var(--space-xxl) 0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.ctaButtonWhite {
+    background-color: #fff !important;
+    color: var(--color-section-teal) !important;
+    border-color: #fff !important;
+    font-weight: 700;
+}
+
+.ctaButtonWhite:hover {
+    background-color: var(--color-accent-light) !important;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .journeyGrid {
+        grid-template-columns: 1fr 1fr;
+        /* 2x2 on tablet */
+        gap: var(--space-xl);
+    }
+
+    .journeyGrid::after {
+        display: none;
+    }
+
+    .heroContainer {
+        flex-direction: column;
+    }
+
+    .heroImageWrapper {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .coachingGrid,
+    .experienceGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .journeyGrid {
+        grid-template-columns: 1fr;
+        /* Stack on mobile */
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+}

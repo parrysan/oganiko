@@ -1,0 +1,38 @@
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f0fdfa;
+  /* Very light teal tint */
+  --color-text: #111827;
+  /* Dark Charcoal */
+  --color-text-light: #ffffff;
+  --color-text-muted: #4b5563;
+
+  /* Brand Colors from Design */
+  --color-hero-bg: #0077cc;
+  /* Bright Professional Blue */
+  --color-section-teal: #2d8a8e;
+  /* Muted Teal */
+  --color-accent: #2d8a8e;
+  --color-accent-light: #e0f2f1;
+
+  --color-border: #e5e7eb;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-xxl: 100px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+}

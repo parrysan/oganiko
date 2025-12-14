@@ -1,0 +1,39 @@
+.pageWrapper {
+    min-height: 80vh;
+    padding-top: var(--space-xl);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: var(--space-xl) 0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.timelineItem {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.year {
+    font-weight: 700;
+    color: var(--color-accent);
+    min-width: 80px;
+}
+
+.serviceList {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.serviceCard {
+    padding: var(--space-lg);
+    background-color: var(--color-bg-alt);
+    border-radius: 4px;
+}
